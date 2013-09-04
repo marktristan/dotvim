@@ -66,3 +66,6 @@ set nocindent
 set nosmartindent
 set tabstop=2
 set shiftwidth=2
+
+" Using PHP syntax checking by pressing F5
+map <F5> :!php -l %<CR>
