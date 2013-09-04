@@ -19,7 +19,7 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'elzr/vim-json'
 Bundle 'Lokaltog/vim-easymotion'
 
-filetype plugin indent on
+"filetype plugin indent on
 
 let mapleader=','
 
@@ -43,10 +43,10 @@ set statusline+=\ %l/%L[%p%%]
 set statusline+=\ %v[0x%B]
 
 " disable cursor keys in normal mode
-map <Left>  :echo "no!"<cr>
-map <Right> :echo "no!"<cr>
-map <Up>    :echo "no!"<cr>
-map <Down>  :echo "no!"<cr>
+"map <Left>  :echo "no!"<cr>
+"map <Right> :echo "no!"<cr>
+"map <Up>    :echo "no!"<cr>
+"map <Down>  :echo "no!"<cr>
 
 let g:ctrlp_custom_ignore = {
   \ 'dir': '\.git$\|\.hg$\|\.svn$\|\.yardoc\|public\/images\|public\/system\|data\|log\|tmp$',
@@ -59,3 +59,10 @@ set autochdir
 set splitbelow
 
 autocmd FileType ruby,php,sql autocmd BufWritePre * :%s/\s\+$//e
+
+" Custom config
+set noautoindent
+set nocindent
+set nosmartindent
+set tabstop=2
+set shiftwidth=2
